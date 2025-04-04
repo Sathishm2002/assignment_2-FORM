@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <form id="my-form">
+      <h1>Register new account</h1>
+      <div>
+        <input type="text" id="first" placeholder="Name" onchange="validateInputs()">
+        <input type="text" id="last" placeholder="Last Name" onchange="validateInputs()">
+        <div class="form-details">
+                <input type="text" id="fullName" placeholder="Name" onchange="validateInputs()">
+                <input type="text" id="city" placeholder="City" onchange="validateInputs()">
+                <input type="number" id="phone" placeholder="Phone Number" onchange="validateInputs()">
+                <input type="email" id="email" placeholder="E-mail" onchange="validateInputs()">
+        </div>
+          <button type="submit">Submit</button>
+      </div>
+    </form>
+    <section>
+     <h3 id="data"></h3>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
